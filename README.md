@@ -140,4 +140,4 @@ mvn exec:java -Dexec.mainClass="com.juego.JuegoLuchaMedieval"
 
 # Autor
 
-Proyecto desarrollado para Ingeniería de Software utilizando Java, Maven, JUnit, Mockito y GitHub Actions.
+Proyecto desarrollado para Ingeniería de Software utilizando Java, Maven, JUnit, Mockito y GitHub Actions.Fri May 22 05:51:00 UTC 2026
