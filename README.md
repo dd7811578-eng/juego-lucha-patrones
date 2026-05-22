@@ -1,13 +1,14 @@
-# Juego de Lucha Medieval 🏰⚔️
+# Juego de Lucha Medieval
 
-Juego de combate por turnos en Java, refactorizado con patrones de diseño creacionales y estructurales, pruebas unitarias con JUnit 5 + Mockito e integración continua con GitHub Actions.
+Este proyecto consiste en un juego de combate por turnos desarrollado en Java para la materia Ingeniería de Software. Durante el refinamiento del proyecto se implementaron diferentes patrones de diseño, pruebas unitarias y automatización con GitHub Actions.
 
 ---
 
 # Patrones de Diseño Implementados
 
 ## 1. Factory Method
-Permite crear personajes sin depender de clases concretas.
+
+Este patrón se utilizó para crear los personajes del juego de una manera más organizada, evitando crear directamente los objetos desde la clase principal.
 
 ### Clases:
 - PersonajeFactory
@@ -25,7 +26,8 @@ Personaje guerrero = factory.crearPersonaje("Arthur");
 ---
 
 ## 2. Strategy
-Permite cambiar la estrategia de ataque dinámicamente.
+
+Este patrón permite que cada personaje pueda cambiar su forma de ataque durante la ejecución del juego.
 
 ### Clases:
 - EstrategiaAtaque
@@ -42,7 +44,8 @@ personaje.setEstrategiaAtaque(new AtaqueMagico());
 ---
 
 ## 3. Decorator
-Añade mejoras de daño sin modificar clases existentes.
+
+Este patrón se utilizó para agregar mejoras y habilidades especiales sin modificar directamente las clases originales.
 
 ### Clases:
 - DecoradorArma
@@ -104,11 +107,11 @@ Tests run: 34, Failures: 0, Errors: 0
 # Integración Continua
 
 GitHub Actions ejecuta automáticamente:
-- Compilación
+- Compilación del proyecto
 - Ejecución de pruebas
-- Validación del proyecto
+- Validación del funcionamiento del sistema
 
-Archivo:
+Archivo utilizado:
 
 ```text
 .github/workflows/ci.yml
@@ -140,4 +143,4 @@ mvn exec:java -Dexec.mainClass="com.juego.JuegoLuchaMedieval"
 
 # Autor
 
-Proyecto desarrollado para Ingeniería de Software utilizando Java, Maven, JUnit, Mockito y GitHub Actions.Fri May 22 05:51:00 UTC 2026
+Proyecto desarrollado para la materia Ingeniería de Software utilizando Java, Maven, JUnit, Mockito y GitHub Actions.
